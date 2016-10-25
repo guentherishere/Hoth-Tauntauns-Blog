@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hoth Tauntauns</title>
+    <!-- MASTER CSS -->
+    <link rel="stylesheet" href="dist/master.css" media="screen" title="no title" charset="utf-8">
+    <!-- BOWER DEPENDENCIES -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body ng-app="app">
+
+
+  <div class="col-lg-12 teams-row">
+    <h6 class="col-lg-4">&nbsp;</h6>
+    <h5 class="col-lg-4 text-center">The Official Website of the Hoth Tauntauns</h5>
+      <ul class="col-lg-4 teams-list text-right">
+          <li><a ui-sref="home">Team 1</a></li>
+          <li><a ui-sref="roster">Team 2</a></li>
+          <li><a ui-sref="scores">Team 3</a></li>
+          <li><a ui-sref="media">Team 4</a></li>
+          <li><a ui-sref="blog">Team 5</a></li>
+      </ul>
+  </div>
+
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <br>
+        <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+        <!-- mobile -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="roster">Roster</a></li>
+                <li><a ui-sref="scores">Scores</a></li>
+                <li><a ui-sref="media">Media</a></li>
+                <li><a ui-sref="blog">Blog</a></li>
+            </ul>
+            <span class="soc-icons pull-right">
+                <i class="fa fa-3x fa-facebook-square" aria-hidden="true"></i>
+                <i class="fa fa-3x fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
+            </span>
+        </div>
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <!-- INJECT CONTENT -->
+        <ui-view></ui-view>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JAVASCRIPT DEPENDENCIES -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/scripts/app.js"></script>
+
+</body>
+
+</html>

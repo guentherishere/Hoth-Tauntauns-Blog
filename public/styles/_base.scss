@@ -1,0 +1,38 @@
+/******************************/
+/*       Common Colors       */
+/****************************/
+$hoth-blue: #09AAD4;
+$hoth-white: #ffffff;
+$hoth-ice: #F7F7FF;
+
+/******************************/
+/*       Common Fonts       */
+/****************************/
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("fonts/bebas_neue/TTF/BebasNeueRegular") format("ttf"),
+         url("fonts/bebas_neue/BebasNeueRegular") format("ttf")
+}
+$priFont1: 'Bebas Neue', sans-serif;
+
+@font-face {
+    font-family: "Source Sans";
+    src: url("fonts/Source_Sans_Pro/SourceSansPro-Regular") format("ttf")
+}
+$priFont2: 'Source Sans', arial;
+
+/******************************/
+/*  Global Layout Settings   */
+/****************************/
+body {
+    margin-top: 110px;
+}
+
+h1, h2, h3, h4 {
+  font-family: $priFont1 !important;
+  font-weight: bold;
+}
+
+p, h5 {
+  font-family: $priFont2 !important;
+}

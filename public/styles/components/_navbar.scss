@@ -1,0 +1,49 @@
+/******************************/
+/*       Navbar Styling      */
+/****************************/
+nav {
+    background: $hoth-blue !important;
+
+    a {
+        color: $hoth-white !important;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+    /* Push links down to align w. logo */
+    .navbar-nav {
+        margin-top: 30px !important;
+    }
+}
+/* teams row in eyebrow navbar*/
+.teams-row {
+    position: fixed;
+    background: $hoth-ice !important;
+    top: 0;
+    height: 35px;
+    z-index: 9999;
+    width: 100%;
+
+    .teams-list {
+        list-style: none;
+        padding-top: 8px;
+
+        li {
+            display: inline;
+        }
+    }
+}
+/* remove navbar inverse border */
+.navbar-inverse {
+    border: 0 !important;
+}
+/* styling for navbar logo */
+.navbar-brand {
+    height: 100px !important;
+    padding: 10;
+
+    img {
+        height: 80px;
+    }
+}
