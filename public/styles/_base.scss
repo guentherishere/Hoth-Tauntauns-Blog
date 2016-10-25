@@ -2,6 +2,7 @@
 /*       Common Colors       */
 /****************************/
 $hoth-blue: #09AAD4;
+$hoth-dark-blue: #067694;
 $hoth-white: #ffffff;
 $hoth-ice: #F7F7FF;
 
@@ -26,6 +27,11 @@ $priFont2: 'Source Sans', arial;
 /****************************/
 body {
     margin-top: 110px;
+}
+
+a {
+  font-family: $priFont1;
+  font-weight: bold;
 }
 
 h1, h2, h3, h4 {

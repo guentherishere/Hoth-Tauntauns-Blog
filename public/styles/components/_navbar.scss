@@ -6,14 +6,37 @@ nav {
 
     a {
         color: $hoth-white !important;
-
-        &:hover {
-            font-weight: bold;
-        }
     }
     /* Push links down to align w. logo */
     .navbar-nav {
-        margin-top: 30px !important;
+        li:hover {
+            background: $hoth-dark-blue !important;
+            transition: background 0.5s linear;
+        }
+
+        a {
+            font-size: 28px;
+            letter-spacing: 0.05em;
+            font-weight: normal;
+            line-height: 80px;
+            margin-top: 5px;
+            padding-bottom: 0;
+        }
+    }
+
+    .soc-icons {
+        color: $hoth-white;
+        margin-right: 31px;
+        margin-top: 38px;
+        list-style: none;
+        li {
+          height: 100%;
+          display: inline;
+        }
+
+        i {
+            padding-left: 10px;
+        }
     }
 }
 /* teams row in eyebrow navbar*/
@@ -24,6 +47,11 @@ nav {
     height: 35px;
     z-index: 9999;
     width: 100%;
+
+    .eyebrow-header {
+      text-transform: uppercase;
+      font-size: 14px;
+    }
 
     .teams-list {
         list-style: none;
