@@ -13,17 +13,17 @@
 <body ng-app="app">
 
 
-  <div class="col-lg-12 teams-row">
-    <h6 class="col-lg-4">&nbsp;</h6>
-    <h5 class="col-lg-4 text-center eyebrow-header">The official site of the Hoth Tauntauns</h5>
-      <ul class="col-lg-4 teams-list text-right">
-          <li><a ui-sref="home">Team 1</a></li>
-          <li><a ui-sref="roster">Team 2</a></li>
-          <li><a ui-sref="scores">Team 3</a></li>
-          <li><a ui-sref="media">Team 4</a></li>
-          <li><a ui-sref="blog">Team 5</a></li>
-      </ul>
-  </div>
+    <div class="col-lg-12 teams-row">
+        <h6 class="col-lg-4">&nbsp;</h6>
+        <h5 class="col-lg-4 text-center eyebrow-header">The official site of the Hoth Tauntauns</h5>
+        <ul class="col-lg-4 teams-list text-right">
+            <li><a ui-sref="home">Team 1</a></li>
+            <li><a ui-sref="roster">Team 2</a></li>
+            <li><a ui-sref="scores">Team 3</a></li>
+            <li><a ui-sref="media">Team 4</a></li>
+            <li><a ui-sref="blog">Team 5</a></li>
+        </ul>
+    </div>
 
 
     <!-- NAVIGATION -->
@@ -55,8 +55,9 @@
         </div>
     </nav>
 
-
     <!-- MAIN CONTENT -->
+    <!-- Container element -->
+    <div class="parallax"><canvas id="parallax"></canvas></div>
     <div class="container">
 
         <!-- INJECT CONTENT -->
@@ -76,7 +77,8 @@
     <script src="/bower_components/angular/angular.js"></script>
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/scripts/app.js"></script>
+    <script src="/scripts/snoweffect.js"></script>
+
 
 </body>
-
 </html>

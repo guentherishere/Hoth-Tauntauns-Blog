@@ -3,8 +3,8 @@
 /****************************/
 $hoth-blue: #09AAD4;
 $hoth-dark-blue: #067694;
-$hoth-white: #ffffff;
-$hoth-ice: #F7F7FF;
+$hoth-off-white: #f0f3f4;
+$hoth-ice: #f7f7f7;
 
 /******************************/
 /*       Common Fonts       */
@@ -27,6 +27,7 @@ $priFont2: 'Source Sans', arial;
 /****************************/
 body {
     margin-top: 110px;
+    background: $hoth-off-white;
 }
 
 a {
@@ -41,4 +42,9 @@ h1, h2, h3, h4 {
 
 p, h5 {
   font-family: $priFont2 !important;
+}
+
+.well {
+  border-bottom: solid 2px #ddd !important;
+  border-radius: 0 !important;
 }

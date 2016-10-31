@@ -765,8 +765,9 @@
 // //
 // //##
 //
-// $well-bg:                     #f5f5f5 !default;
-// $well-border:                 darken($well-bg, 7%) !default;
+$well-bg:                     #ffffff;
+$well-border:                 darken($well-bg, 7%);
+
 //
 //
 // //== Badges
